@@ -1,0 +1,27 @@
+{
+  "name": "BroncoMoreDirect",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://cmsweb.cms.cpp.edu/*",
+        "https://cmsweb.cms.cpp.edu/*"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ]
+    }
+  ],
+  "devtools_page": "devtools.html",
+  "web_accessible_resources": [
+    "panel.html",
+    "panel.bundle.js",
+    "content.styles.css",
+    "icon-128.png",
+    "icon-34.png"
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
